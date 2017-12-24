@@ -1,4 +1,4 @@
-module Main
+module ToDoList
     where
 
  -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -47,11 +47,11 @@ main = do
            
 mainH :: String -> IO ()
 mainH cmd
-      | cmd == "menu" || cmd == "6" = do
+      | cmd == "menu" || cmd == "0" = do
                                       printMenu cmds
                                       printEmptyLine
                                       main
-      | cmd == "exit" || cmd == "8" = putStrLn ""
+      | cmd == "exit" || cmd == "7" = putStrLn ""
       | otherwise = main
 
  -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
